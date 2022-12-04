@@ -1,0 +1,23 @@
+{
+  "name": "@vue-floating-fantasy/monorepo",
+  "version": "0.0.1",
+  "description": "Floating-ui for Vue 2 & 3.",
+  "private": "true",
+  "author": "nooooooom <https://github.com/nooooooom>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nooooooom/vue-floating-fantasy.git"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@vue/test-utils": "^2.0.2",
+    "jsdom": "^20.0.0",
+    "tsup": "^6.2.3",
+    "typescript": "^4.7.4",
+    "unbuild": "^0.9.4",
+    "vitest": "^0.24.5",
+    "vue": "^3.2.7",
+    "vue2": "npm:vue@^2.7.10"
+  }
+}

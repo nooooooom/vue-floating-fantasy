@@ -1,0 +1,55 @@
+{
+  "name": "@vue-floating-fantasy/core",
+  "version": "0.0.1",
+  "keywords": [
+    "tooltip",
+    "popover",
+    "dropdown",
+    "menu",
+    "popup",
+    "positioning",
+    "vue-hooks"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "nooooooom <https://github.com/nooooooom>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nooooooom/vue-floating-fantasy",
+    "directory": "packages/core"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublish": "pnpm run build",
+    "test": "vue-demi-switch 3 vue & vitest",
+    "test:2": "vue-demi-switch 2.7 vue2 & vitest"
+  },
+  "dependencies": {
+    "@floating-ui/core": "^1.0.0",
+    "@floating-ui/dom": "^1.0.0",
+    "vue-demi": "*",
+    "vue-reactivity-fantasy": "^0.0.5"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.4.4",
+    "vue": ">=2.7.0 || ^3.2.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "strict": true,
+    "jsx": "preserve",
+    "types": ["vite/client", "vitest/globals"],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "."
+  },
+  "include": ["packages/*/src", "packages/*/*.ts", "packages/*/__tests__"]
+}
