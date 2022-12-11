@@ -42,7 +42,7 @@ const floatingStyleRef = computed(() => {
 onBeforeUnmount(stop)
 ```
 
-`useFloating` is designed to recalculate the position only when any of the `referenceRef`, `floatingRef`, `optionsRef` changes, if you want it to update automatically when the DOM position changes, you can use ` useAutoUpdate`
+`useFloating` is designed to recalculate the position only when any of the `[referenceRef, floatingRef, optionsRef]` changes, if you want it to update automatically when the DOM position changes, you can use ` useAutoUpdate`
 
 ```ts
 import { useAutoUpdate } from '@vue-floating-fantasy/core'

@@ -7,7 +7,7 @@
     "allowJs": false,
     "strict": true,
     "jsx": "preserve",
-    "types": ["vite/client", "vitest/globals"],
+    "types": ["vitest/globals"],
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "."

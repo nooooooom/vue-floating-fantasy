@@ -14,13 +14,13 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
     }
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -32,10 +32,10 @@
     "directory": "packages/core"
   },
   "scripts": {
-    "build": "tsup",
-    "prepublish": "pnpm run build",
+    "build": "unbuild",
     "test": "vue-demi-switch 3 vue & vitest",
-    "test:2": "vue-demi-switch 2.7 vue2 & vitest"
+    "test:2": "vue-demi-switch 2.7 vue2 & vitest",
+    "prepublish": "vitest run & npm run build"
   },
   "dependencies": {
     "@floating-ui/core": "^1.0.0",
